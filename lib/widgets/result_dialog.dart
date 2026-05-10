@@ -99,7 +99,7 @@ class ResultDialog extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.1),
+                  color: color.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(color: color, width: 2),
                 ),
@@ -140,7 +140,7 @@ class ResultDialog extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.05),
+                  color: color.withValues(alpha: 0.05),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Row(
@@ -216,7 +216,7 @@ class ResultDialog extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: LinearProgressIndicator(
               value: value,
-              backgroundColor: color.withOpacity(0.2),
+              backgroundColor: color.withValues(alpha: 0.2),
               valueColor: AlwaysStoppedAnimation<Color>(color),
               minHeight: 8,
             ),

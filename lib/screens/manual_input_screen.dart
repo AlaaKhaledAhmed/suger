@@ -147,7 +147,7 @@ class _ManualInputScreenState extends State<ManualInputScreen> {
                     secondary: const Icon(Icons.people),
                     value: _familyHistory,
                     onChanged: (val) => setState(() => _familyHistory = val),
-                    activeColor: Colors.teal,
+                    activeThumbColor: Colors.teal,
                   ),
                 ]),
                 const SizedBox(height: 24),
@@ -250,7 +250,7 @@ class _ManualInputScreenState extends State<ManualInputScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: DropdownButtonFormField<T>(
-        value: value,
+        initialValue: value,
         items: items,
         onChanged: onChanged,
         decoration: InputDecoration(
