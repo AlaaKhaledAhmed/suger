@@ -1,0 +1,76 @@
+{
+  "feature_names": [
+    "age",
+    "gender_encoded",
+    "weight_kg",
+    "height_cm",
+    "ideal_weight_kg",
+    "bmi",
+    "glucose_mg_dl",
+    "blood_pressure",
+    "insulin",
+    "pregnancies",
+    "family_history",
+    "activity_encoded",
+    "diabetes_pedigree"
+  ],
+  "feature_means": [
+    47.8125,
+    0.475,
+    75.06749984741211,
+    168.23925033569336,
+    59.814250211715695,
+    26.872249977588652,
+    108.43500018596649,
+    72.15699996948243,
+    79.72500005334615,
+    0.845,
+    0.29,
+    0.85,
+    1.2756350008025765
+  ],
+  "feature_stds": [
+    17.73971092633699,
+    0.49937460888595414,
+    14.604719960545806,
+    9.96410023515673,
+    9.029998543445148,
+    6.4137512349135335,
+    34.547668439557576,
+    11.464935662206281,
+    50.20622700824003,
+    1.8804188363234386,
+    0.4537620521815381,
+    0.7566372975210773,
+    0.7062015072800207
+  ],
+  "labels": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "labels_ar": [
+    "ضعيفة",
+    "متوسطة",
+    "مرتفعة"
+  ],
+  "gender_encoding": {
+    "Male": 0,
+    "Female": 1
+  },
+  "activity_encoding": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2
+  },
+  "input_shape": [
+    1,
+    13
+  ],
+  "output_shape": [
+    1,
+    3
+  ],
+  "test_accuracy": 0.81,
+  "description": "Diabetes risk prediction model - 3 classes (Low/Medium/High)"
+}
